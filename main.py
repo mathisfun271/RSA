@@ -112,10 +112,10 @@ def encrypt(m):#Encrypts text. Public keys not needed, saved as variables
         ret.append(modexp(el,e,n))#adds el^e mod n to return list for each section
     return ret
 
-def decrypt(c):
+def decrypt(c,privKey):
     rawbin = ''
     for el in c:
-       rawbin += format(modexp(el,d,n),'b')[1:]
+       rawbin += format(modexp(el,privKey,n),'b')[1:]
        #Formats el^d mod n to binary, then removes the leading one for each section.
     return numToTxt(rawbin)#converts back to text
 
