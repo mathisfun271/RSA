@@ -48,4 +48,4 @@ def encrypt(m):#Encrypts text. Public keys not needed, saved as variables
     return ret
 
 m = input('Text to encrypt: ')
-print(encrypt(m))
+input(encrypt(m))
