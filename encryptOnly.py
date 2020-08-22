@@ -49,4 +49,3 @@ def encrypt(m):#Encrypts text. Public keys not needed, saved as variables
 
 m = input('Text to encrypt: ')
 print(encrypt(m))
-  
